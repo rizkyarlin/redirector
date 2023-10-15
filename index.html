@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- This page is use to redirect link from QR Code to dynamic landing page-->
+
+<head>
+    <script>
+        // map city to url
+        var urls = {
+            "takalar": "https://www.e-seaweed.com/index.php/eco-label-takalar/",
+            "jeneponto": "https://www.e-seaweed.com/index.php/eco-label-jeneponto/"
+        }
+        
+        var target = new URLSearchParams(window.location.search).get("target");
+        
+        window.location.href = urls[target];
+    </script>
+</head>
